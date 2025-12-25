@@ -8,8 +8,11 @@
         - หากไม่พบให้ Return -1
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ด้านล่าง
 */
-
+// .map(), .filter(), .reduce() ใช่ Linear Search คือ การทำงานคล้ายๆกันแต่ไม่่ใช่เพราะมันเป็นการวนลูปเข้าไปในทุกๆตัวแต่การ search ต้องทำการ return ออกมาเมื่อเจอ
 // Start coding here
+const findNumberIndex = (numbers, targetNumber) => {
+  return numbers.indexOf(targetNumber);
+};
 
 const numbers1 = [10, 30, 5, 20, 55];
 console.log(findNumberIndex(numbers1, 55)); // 4
